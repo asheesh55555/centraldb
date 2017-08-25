@@ -1,0 +1,2 @@
+json.extract! user_detail, :id, :Number, :Gender, :NameSet, :Title, :GivenName, :MiddleInitial, :Surname, :StreetAddress, :City, :State, :StateFull, :ZipCode, :Country, :CountryFull, :EmailAddress, :Username, :Password, :BrowserUserAgent, :TelephoneNumber, :TelephoneCountryCode, :MothersMaiden, :Birthday, :Age, :CCType, :CCNumber, :CVV2, :CCExpires, :NationalID, :UPS, :WesternUnionMTCN, :MoneyGramMTCN, :Color, :Occupation, :Company, :Vehicle, :Domain, :GUID, :Latitude, :Longitude, :created_at, :updated_at
+json.url user_detail_url(user_detail, format: :json)

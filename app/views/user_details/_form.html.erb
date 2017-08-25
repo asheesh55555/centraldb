@@ -1,0 +1,230 @@
+<%= form_with(model: user_detail, local: true) do |form| %>
+  <% if user_detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user_detail.errors.count, "error") %> prohibited this user_detail from being saved:</h2>
+
+      <ul>
+      <% user_detail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Number %>
+    <%= form.text_field :Number, id: :user_detail_Number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Gender %>
+    <%= form.text_field :Gender, id: :user_detail_Gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :NameSet %>
+    <%= form.text_field :NameSet, id: :user_detail_NameSet %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Title %>
+    <%= form.text_field :Title, id: :user_detail_Title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :GivenName %>
+    <%= form.text_field :GivenName, id: :user_detail_GivenName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MiddleInitial %>
+    <%= form.text_field :MiddleInitial, id: :user_detail_MiddleInitial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Surname %>
+    <%= form.text_field :Surname, id: :user_detail_Surname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :StreetAddress %>
+    <%= form.text_field :StreetAddress, id: :user_detail_StreetAddress %>
+  </div>
+
+  <div class="field">
+    <%= form.label :City %>
+    <%= form.text_field :City, id: :user_detail_City %>
+  </div>
+
+  <div class="field">
+    <%= form.label :State %>
+    <%= form.text_field :State, id: :user_detail_State %>
+  </div>
+
+  <div class="field">
+    <%= form.label :StateFull %>
+    <%= form.text_field :StateFull, id: :user_detail_StateFull %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ZipCode %>
+    <%= form.text_field :ZipCode, id: :user_detail_ZipCode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Country %>
+    <%= form.text_field :Country, id: :user_detail_Country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CountryFull %>
+    <%= form.text_field :CountryFull, id: :user_detail_CountryFull %>
+  </div>
+
+  <div class="field">
+    <%= form.label :EmailAddress %>
+    <%= form.text_field :EmailAddress, id: :user_detail_EmailAddress %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Username %>
+    <%= form.text_field :Username, id: :user_detail_Username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Password %>
+    <%= form.text_field :Password, id: :user_detail_Password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :BrowserUserAgent %>
+    <%= form.text_field :BrowserUserAgent, id: :user_detail_BrowserUserAgent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :TelephoneNumber %>
+    <%= form.text_field :TelephoneNumber, id: :user_detail_TelephoneNumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :TelephoneCountryCode %>
+    <%= form.text_field :TelephoneCountryCode, id: :user_detail_TelephoneCountryCode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MothersMaiden %>
+    <%= form.text_field :MothersMaiden, id: :user_detail_MothersMaiden %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Birthday %>
+    <%= form.text_field :Birthday, id: :user_detail_Birthday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Age %>
+    <%= form.text_field :Age, id: :user_detail_Age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CCType %>
+    <%= form.text_field :CCType, id: :user_detail_CCType %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CCNumber %>
+    <%= form.text_field :CCNumber, id: :user_detail_CCNumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CVV2 %>
+    <%= form.text_field :CVV2, id: :user_detail_CVV2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CCExpires %>
+    <%= form.text_field :CCExpires, id: :user_detail_CCExpires %>
+  </div>
+
+  <div class="field">
+    <%= form.label :NationalID %>
+    <%= form.text_field :NationalID, id: :user_detail_NationalID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :UPS %>
+    <%= form.text_field :UPS, id: :user_detail_UPS %>
+  </div>
+
+  <div class="field">
+    <%= form.label :WesternUnionMTCN %>
+    <%= form.text_field :WesternUnionMTCN, id: :user_detail_WesternUnionMTCN %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MoneyGramMTCN %>
+    <%= form.text_field :MoneyGramMTCN, id: :user_detail_MoneyGramMTCN %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Color %>
+    <%= form.text_field :Color, id: :user_detail_Color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Occupation %>
+    <%= form.text_field :Occupation, id: :user_detail_Occupation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Company %>
+    <%= form.text_field :Company, id: :user_detail_Company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Vehicle %>
+    <%= form.text_field :Vehicle, id: :user_detail_Vehicle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Domain %>
+    <%= form.text_field :Domain, id: :user_detail_Domain %>
+  </div>
+
+  <div class="field">
+    <%= form.label :GUID %>
+    <%= form.text_field :GUID, id: :user_detail_GUID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Latitude %>
+    <%= form.text_field :Latitude, id: :user_detail_Latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Longitude %>
+    <%= form.text_field :Longitude, id: :user_detail_Longitude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Import Products</h2>
+
+<%= form_tag import_user_details_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
